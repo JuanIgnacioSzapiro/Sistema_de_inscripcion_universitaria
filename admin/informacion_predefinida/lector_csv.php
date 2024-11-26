@@ -10,6 +10,11 @@ function obtener_datos_default($ubicacion_del_archivo)
     return separar_punto_coma(obtener_datos($ubicacion_del_archivo));
 }
 
+function obtener_datos_default_como_string($ubicacion_del_archivo)
+{
+    return implode(",",obtener_datos($ubicacion_del_archivo));
+}
+
 /**
  * Devuelve el texto crudo de un .csv
  * @param mixed $ubicacion_del_archivo

@@ -1,4 +1,16 @@
 <?php
+require_once(dirname(__FILE__) . "/admin/informacion_predefinida/constantes.php");
+require_once(dirname(__FILE__) . "/admin/informacion_predefinida/generador_de_tablas.php");
+require_once(dirname(__FILE__) . "/admin/informacion_predefinida/estandarizador_de_informacion_de_tablas.php");
+require_once(dirname(__FILE__) . "/admin/informacion_predefinida/generador_automatico_de_habilidades.php");
+
+
+require_once(dirname(__FILE__) . "/admin/modelos/administrador_modelo.php");
+
+require_once(dirname(__FILE__) . "/admin/controladores/subir_objeto.php");
+
+
+
 function activar_plugin()
 {
     crear_tablas();
@@ -8,6 +20,7 @@ function activar_plugin()
 function crear_tablas()
 {
     $tablas = TOTALIDAD_TABLAS;
+    generador_automatico_de_habilidades();
     foreach ($tablas as $tabla) {
         activar_tabla(generar_sql_de_array_asociado(estandarizador_de_tablas($tabla)));
     }
@@ -34,4 +47,5 @@ function primer_usuario()
 
 function primeros_roles()
 {
+
 }
