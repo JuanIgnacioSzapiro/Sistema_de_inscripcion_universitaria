@@ -1,0 +1,1 @@
+nombre_de_tabla;usuarios_roles_inspt,id;INT(11) NOT NULL AUTO_INCREMENT,id_usuario;INT(11) NOT NULL,id_rol;INT(11) NOT NULL

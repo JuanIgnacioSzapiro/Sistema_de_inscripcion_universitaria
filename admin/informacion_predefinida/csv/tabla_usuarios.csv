@@ -1,0 +1,1 @@
+nombre_de_tabla;usuarios_inspt,id;INT(11) NOT NULL AUTO_INCREMENT,nombre_de_usuario;VARCHAR(255) NOT NULL,clave;VARCHAR(255) NOT NULL,nombre;VARCHAR(255) NOT NULL,apellido;VARCHAR(255) NOT NULL,dni;VARCHAR(255) NOT NULL,mail;VARCHAR(255) NOT NULL,numero_de_celular;VARCHAR(255) NOT NULL,activo;BOOL DEFAULT false
