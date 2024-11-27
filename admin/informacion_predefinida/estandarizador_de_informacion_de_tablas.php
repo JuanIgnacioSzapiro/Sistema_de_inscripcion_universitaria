@@ -17,7 +17,16 @@ function estandarizador_de_tablas($nombre_tabla)
  * Fabrica arrays asociados con la informacion de los csv para el contenido de las tablas
  * @return array
  */
-function estandarizador_de_contenido_de_tablas($nombre_tabla)
+function estandarizador_de_contenido_de_tablas_asociable($nombre_tabla)
 {
     return asociar(obtener_datos_default($nombre_tabla . SUFIJO_CSV));
+}
+
+/**
+ * Fabrica arrays con la informacion de los csv para el contenido de las tablas
+ * @return array
+ */
+function estandarizador_de_contenido_de_tablas_NO_asociable($nombre_tabla)
+{
+    return obtener_datos_default($nombre_tabla . SUFIJO_CSV);
 }

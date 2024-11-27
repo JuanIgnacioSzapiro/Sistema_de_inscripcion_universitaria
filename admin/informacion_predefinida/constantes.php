@@ -9,5 +9,7 @@ define("TOTALIDAD_TABLAS", [USUARIOS, ROLES, HABILIDADES, USUARIOS_ROLES, ROLES_
 define('SUFIJO_CSV', ".csv");
 define('SUFIJO_INSPT', "_inspt");
 define('NOMBRE_DE_TABLA', "nombre_de_tabla");
+define('NOMBRE_DE_ROL', "nombre_de_rol");
 define('USUARIO_MAESTRO', "usuario_maestro");
 define('ADMINISTRADOR', 'Administrador');
+define('ROL', 'Rol');
